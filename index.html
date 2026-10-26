@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en" class="is-loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Erin Çakmakçı — Software Engineer</title>
+  <meta name="description" content="Erin Çakmakçı — software engineer building simple interfaces and solid infrastructure across web, mobile and APIs.">
+  <meta name="theme-color" content="#1d1d1f">
+  <link rel="canonical" href="https://erincakmakci.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Erin Çakmakçı — Software Engineer">
+  <meta property="og:description" content="Simple interfaces. Solid infrastructure.">
+  <meta property="og:url" content="https://erincakmakci.com/">
+  <meta property="og:image" content="https://erincakmakci.com/assets/img/erin.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%231d1d1f'/%3E%3Ccircle cx='32' cy='32' r='27' fill='none' stroke='%23ff7a1a' stroke-width='3'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-weight='700' font-size='30' fill='%23ff7a1a'%3EE%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="assets/img/erin.jpg">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__row">
+        <span class="loader__name">Erin Çakmakçı</span>
+        <span class="loader__count" data-loader-count>000</span>
+      </div>
+      <div class="loader__bar"><span data-loader-bar></span></div>
+      <div class="loader__row">
+        <span class="eyebrow" data-i18n="loader.role">Software Engineer</span>
+        <span class="eyebrow" data-i18n="loader.port">Portfolio ’26</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress" data-progress></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span></span></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <nav class="nav" aria-label="Main menu" data-i18n-attr="aria-label:nav.label">
+    <a href="#top" class="nav__logo" data-magnetic aria-label="Back to top" data-i18n-attr="aria-label:nav.top">E</a>
+    <a href="#hakkimda" class="nav__link" data-i18n="nav.about">About</a>
+    <a href="#isler" class="nav__link nav__link--keep" data-i18n="nav.work">Work</a>
+    <a href="#yetkinlikler" class="nav__link" data-i18n="nav.skills">Skills</a>
+    <a href="#iletisim" class="nav__cta" data-magnetic data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <!-- Dil seçici -->
+  <div class="lang" role="group" aria-label="Language" data-active="en">
+    <span class="lang__pill" aria-hidden="true"></span>
+    <button type="button" class="lang__btn" data-lang="en" aria-pressed="true" lang="en">EN</button>
+    <button type="button" class="lang__btn" data-lang="tr" aria-pressed="false" lang="tr">TR</button>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" data-hero>
+      <canvas class="contours" data-contours='{"alpha":0.26,"cell":14,"scale":0.0021,"mouse":1}' aria-hidden="true"></canvas>
+
+      <div class="hero__meta">
+        <span class="eyebrow" data-i18n="hero.eyebrow">(01) — Portfolio</span>
+        <span class="status"><i></i><span data-i18n="hero.status">Open to new projects</span></span>
+      </div>
+
+      <div class="hero__stage" data-hero-stage>
+        <div class="hero__word hero__word--back" aria-hidden="true" data-hero-word>
+          <span class="line-mask"><span data-split="chars">ERIN</span></span>
+        </div>
+
+        <figure class="hero__photo" data-hero-photo>
+          <img src="assets/img/erin.jpg" alt="Portrait of Erin Çakmakçı" data-i18n-attr="alt:hero.alt" width="1125" height="2000" fetchpriority="high">
+        </figure>
+
+        <h1 class="hero__word hero__word--front" data-hero-word>
+          <span class="sr-only" data-i18n="hero.sr">Erin Çakmakçı — Software Engineer</span>
+          <span class="line-mask" aria-hidden="true"><span data-split="chars">ERIN</span></span>
+        </h1>
+      </div>
+
+      <div class="hero__bottom" data-hero-fade>
+        <div class="hero__intro">
+          <p class="hero__surname"><span class="line-mask"><span data-split="chars">Çakmakçı</span></span></p>
+          <p class="hero__lead" data-i18n="hero.lead">I’m a software engineer. I build <strong>simple interfaces</strong> and <strong>solid infrastructure</strong> across web, mobile and APIs.</p>
+        </div>
+        <a href="#hakkimda" class="scroll-cue" data-cursor="Scroll" data-i18n-attr="data-cursor:hero.scroll">
+          <span data-i18n="hero.scroll">Scroll</span>
+          <i></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-label="Technologies I use" data-i18n-attr="aria-label:marquee.label" data-marquee>
+      <div class="marquee__track">
+        <span>PHP</span><b>✦</b><span>Flutter</span><b>✦</b><span>Python</span><b>✦</b><span>FastAPI</span><b>✦</b><span>React</span><b>✦</b><span>MySQL</span><b>✦</b><span>MongoDB</span><b>✦</b><span>Rust</span><b>✦</b><span>C++</span><b>✦</b><span>MapLibre GL</span><b>✦</b><span>PX4</span><b>✦</b><span>ROS 2</span><b>✦</b><span>Gazebo</span><b>✦</b><span>REST</span><b>✦</b><span>JavaScript</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ============ MANIFESTO ============ -->
+    <section class="manifesto" id="hakkimda" data-manifesto>
+      <div class="manifesto__sticky">
+        <span class="eyebrow" data-i18n="about.eyebrow">(02) — About</span>
+        <p class="manifesto__text" data-split="words" data-i18n="about.text">I turn complex systems into <em>simple</em> experiences. From a social network that lives on a map to a drone that flies itself — I write every line to feel so <em>fluid</em> that no one ever notices.</p>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects" id="isler">
+      <header class="section-head">
+        <span class="eyebrow" data-reveal data-i18n="work.eyebrow">(03) — Selected work</span>
+        <h2 class="section-title" data-reveal style="--d:.08s" data-i18n="work.title">Products, <span class="outline">engines</span><br>and platforms.</h2>
+      </header>
+
+      <div class="projects__list">
+
+        <!-- Login Earth -->
+        <article class="pcard" style="--i:0" data-pcard>
+          <div class="pcard__info">
+            <div class="pcard__top">
+              <span class="pcard__index">01</span>
+              <span class="tag" data-i18n="le.tag">Mobile · API · Maps</span>
+            </div>
+            <h3 class="pcard__title">Login Earth</h3>
+            <p class="pcard__kicker" data-i18n="le.kicker">Instagram for the whole planet.</p>
+            <p class="pcard__desc" data-i18n="le.desc">Every shared photo is pinned on the map where it was taken. A Flutter mobile app, a contract-first PHP REST API, an admin panel and a MapLibre GL landing site.</p>
+            <ul class="chips">
+              <li>Flutter</li><li>PHP 8.2</li><li>MySQL</li><li>MapLibre GL</li><li>REST</li>
+            </ul>
+            <a class="link-arrow" href="https://erincakmakci.xyz/loginearth" target="_blank" rel="noopener" data-cursor="Open" data-i18n-attr="data-cursor:cur.open">
+              <span data-i18n="le.link">Visit the site</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+          <div class="pcard__visual pcard__visual--earth" data-tilt>
+            <div class="phone">
+              <div class="phone__screen">
+                <canvas data-contours='{"alpha":0.55,"cell":9,"scale":0.006,"speed":1.6,"mouse":0}' aria-hidden="true"></canvas>
+                <span class="pin" style="--x:28%;--y:34%;--d:0s"></span>
+                <span class="pin" style="--x:64%;--y:22%;--d:.6s"></span>
+                <span class="pin" style="--x:52%;--y:58%;--d:1.2s"></span>
+                <span class="pin" style="--x:22%;--y:72%;--d:1.8s"></span>
+                <span class="pin" style="--x:76%;--y:78%;--d:2.4s"></span>
+                <div class="phone__card">
+                  <i></i>
+                  <div><b>İstanbul, TR</b><small>41.0082° N · 28.9784° E</small></div>
+                </div>
+              </div>
+              <span class="phone__notch"></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- UAV -->
+        <article class="pcard" style="--i:1" data-pcard>
+          <div class="pcard__info">
+            <div class="pcard__top">
+              <span class="pcard__index">02</span>
+              <span class="tag" data-i18n="uav.tag">Autonomous systems · Simulation</span>
+            </div>
+            <h3 class="pcard__title" data-i18n="uav.title">VTOL UAV</h3>
+            <p class="pcard__kicker" data-i18n="uav.kicker">No runway needed. Flies on wings.</p>
+            <p class="pcard__desc" data-i18n="uav.desc">An autonomous tail-sitter UAV with two counter-rotating ducted propellers and thrust-vectoring vanes. For the 12 kg prototype: an aero coefficient generator, a C++ 6-DOF Gazebo plugin, patched PX4 control allocation and a browser-based ground control station.</p>
+            <dl class="stats">
+              <div><dt>2.045</dt><dd data-i18n="uav.s1">Monte Carlo SITL runs</dd></div>
+              <div><dt>±5 cm</dt><dd data-i18n="uav.s2">position hold in a 10 m hover</dd></div>
+              <div><dt>&lt; 4 s</dt><dd data-i18n="uav.s3">vertical-to-forward transition</dd></div>
+            </dl>
+            <ul class="chips">
+              <li>PX4</li><li>C++</li><li>Gazebo Harmonic</li><li>ROS 2</li><li>Python</li>
+            </ul>
+            <a class="link-arrow" href="https://github.com/aXsd1/UAV" target="_blank" rel="noopener" data-cursor="Open" data-i18n-attr="data-cursor:cur.open">
+              <span data-i18n="cur.github">View on GitHub</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+          <div class="pcard__visual pcard__visual--uav" data-tilt>
+            <svg class="flight" viewBox="0 0 400 300" aria-hidden="true" data-flight>
+              <g class="flight__grid">
+                <path d="M0 260H400M0 200H400M0 140H400M0 80H400"/>
+              </g>
+              <path class="flight__ground" d="M0 262 Q60 252 120 262 T240 260 T400 258"/>
+              <path class="flight__path" d="M60 258 L60 150 C60 104 92 84 140 84 L300 84 C348 84 360 110 360 150 L360 258" data-flight-path/>
+              <g class="flight__uav" data-flight-uav>
+                <rect x="-16" y="-5" width="32" height="10" rx="5"/>
+                <path d="M-2 -5 L4 -24 L10 -24 L8 -5 M-2 5 L4 24 L10 24 L8 5"/>
+                <rect x="-24" y="-7" width="9" height="14" rx="3" class="duct"/>
+              </g>
+            </svg>
+            <div class="hud">
+              <div><span data-i18n="hud.mode">MODE</span><b data-hud-mode>TAKEOFF</b></div>
+              <div><span data-i18n="hud.alt">ALTITUDE</span><b data-hud-alt>0.0 m</b></div>
+              <div><span data-i18n="hud.spd">SPEED</span><b data-hud-spd>0.0 m/s</b></div>
+              <div><span data-i18n="hud.pitch">PITCH</span><b data-hud-pitch>90°</b></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CS2 reverse engineering -->
+        <article class="pcard" style="--i:2" data-pcard>
+          <div class="pcard__info">
+            <div class="pcard__top">
+              <span class="pcard__index">03</span>
+              <span class="tag" data-i18n="cs.tag">Reverse engineering</span>
+            </div>
+            <h3 class="pcard__title">CS2 Internals</h3>
+            <p class="pcard__kicker" data-i18n="cs.kicker">Reading the memory of a running game.</p>
+            <p class="pcard__desc" data-i18n="cs.desc">My Rust fork built on the open-source Valthrun base. Kernel-level read-only memory access, resolving class and field offsets from the game’s schema, a DirectX/Vulkan overlay, a live web radar over shared memory and WebSocket, and an Ed25519-signed updater launcher.</p>
+            <ul class="chips">
+              <li>Rust</li><li>Windows Kernel</li><li>Schema dump</li><li>Overlay</li><li>WebSocket</li>
+            </ul>
+            <a class="link-arrow" href="https://github.com/aXsd1/cs2" target="_blank" rel="noopener" data-cursor="Open" data-i18n-attr="data-cursor:cur.open">
+              <span data-i18n="cur.github">View on GitHub</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+          <div class="pcard__visual pcard__visual--mem" data-tilt>
+            <div class="mem">
+              <div class="mem__bar"><i></i><i></i><i></i><span data-i18n="cs.ro">client.dll · read-only</span></div>
+              <div class="mem__body">
+                <pre class="hex" data-hex></pre>
+                <div class="schema">
+                  <span class="schema__cls">class C_CSPlayerPawn</span>
+                  <span class="schema__row" style="--d:0s"><em>m_iHealth</em><b data-off>+0x????</b></span>
+                  <span class="schema__row" style="--d:.2s"><em>m_iTeamNum</em><b data-off>+0x????</b></span>
+                  <span class="schema__row" style="--d:.4s"><em>m_pGameSceneNode</em><b data-off>+0x????</b></span>
+                  <span class="schema__row" style="--d:.6s"><em>m_vOldOrigin</em><b data-off>+0x????</b></span>
+                  <span class="schema__row" style="--d:.8s"><em>m_entitySpottedState</em><b data-off>+0x????</b></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ ARCHIVE (horizontal) ============ -->
+    <section class="archive" data-archive>
+      <div class="archive__sticky">
+        <div class="archive__head">
+          <span class="eyebrow" data-i18n="ar.eyebrow">(04) — Archive</span>
+          <h2 class="section-title section-title--sm" data-i18n="ar.title">More work</h2>
+        </div>
+        <div class="archive__track" data-archive-track>
+
+          <article class="tile">
+            <span class="tile__num outline">04</span>
+            <svg class="tile__glyph" viewBox="0 0 120 120" aria-hidden="true">
+              <rect x="30" y="26" width="44" height="62" rx="6" transform="rotate(-12 52 57)"/><rect x="46" y="30" width="44" height="62" rx="6" transform="rotate(10 68 61)"/><path d="M66 52l4 8 8 1-6 6 2 8-8-4-8 4 2-8-6-6 8-1z"/>
+            </svg>
+            <div class="tile__body">
+              <h3>Trompet</h3>
+              <p data-i18n="ar.trompet">A card game with an MCTS bot that plans its own moves, on a stateless game API.</p>
+              <ul class="chips chips--sm"><li>Python</li><li>FastAPI</li><li>React</li></ul>
+            </div>
+          </article>
+
+          <article class="tile">
+            <span class="tile__num outline">05</span>
+            <svg class="tile__glyph" viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="10"/><circle cx="24" cy="34" r="6"/><circle cx="96" cy="30" r="6"/><circle cx="28" cy="92" r="6"/><circle cx="94" cy="90" r="6"/><path d="M52 54 29 38M68 54l22-20M52 67 33 88M68 67l21 19"/>
+            </svg>
+            <div class="tile__body">
+              <h3>Komünite Hub</h3>
+              <p data-i18n="ar.kh">BTK Hackathon project: discover local meetups, build your community.</p>
+              <ul class="chips chips--sm"><li>PHP</li><li>MySQL</li><li>JS</li></ul>
+            </div>
+          </article>
+
+          <article class="tile">
+            <span class="tile__num outline">06</span>
+            <svg class="tile__glyph" viewBox="0 0 120 120" aria-hidden="true">
+              <rect x="22" y="30" width="76" height="60" rx="10"/><rect x="32" y="20" width="56" height="10" rx="4"/><path d="M60 78V46M46 58l14-14 14 14"/>
+            </svg>
+            <div class="tile__body">
+              <h3>ETS</h3>
+              <p data-i18n="ar.ets">A modern web solution with an admin panel and project uploads.</p>
+              <ul class="chips chips--sm"><li>PHP</li><li>MySQL</li><li>JS</li></ul>
+            </div>
+          </article>
+
+          <article class="tile">
+            <span class="tile__num outline">07</span>
+            <svg class="tile__glyph" viewBox="0 0 120 120" aria-hidden="true">
+              <path d="M10 86h100M18 86V62M102 86V62M18 62c14-26 70-26 84 0M40 86V58M60 86V52M80 86V58"/>
+            </svg>
+            <div class="tile__body">
+              <h3>Stone Bridge</h3>
+              <p data-i18n="ar.sb">A cinematic showcase site for a premium design and architecture studio.</p>
+              <ul class="chips chips--sm"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+            </div>
+          </article>
+
+          <article class="tile">
+            <span class="tile__num outline">08</span>
+            <svg class="tile__glyph" viewBox="0 0 120 120" aria-hidden="true">
+              <path d="M24 100V40l36-22 36 22v60M24 100h72M44 100V74h32v26M40 50h8M56 50h8M72 50h8M40 62h8M56 62h8M72 62h8"/>
+            </svg>
+            <div class="tile__body">
+              <h3>Arslan Mimarlık</h3>
+              <p data-i18n="ar.am">A clean, typography-led corporate site for an architecture office.</p>
+              <ul class="chips chips--sm"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+            </div>
+          </article>
+
+          <article class="tile">
+            <span class="tile__num outline">09</span>
+            <svg class="tile__glyph" viewBox="0 0 120 120" aria-hidden="true">
+              <path d="M26 42h68l-6 58H32zM44 42v-8a16 16 0 0 1 32 0v8M46 60a14 14 0 0 0 28 0"/>
+            </svg>
+            <div class="tile__body">
+              <h3 data-i18n="ar.store.t">Store</h3>
+              <p data-i18n="ar.store">An e-commerce platform with an admin panel for products, categories and orders.</p>
+              <ul class="chips chips--sm"><li>PHP</li><li>MySQL</li><li>Admin</li></ul>
+            </div>
+          </article>
+
+          <a class="tile tile--cta" href="#iletisim" data-cursor="Write" data-i18n-attr="data-cursor:cur.write">
+            <span class="tile__num">10</span>
+            <div class="tile__body">
+              <h3 data-i18n="ar.cta.t">Next up:<br><span class="outline">your project</span></h3>
+              <p data-i18n="ar.cta">Got an idea? Let’s build it together.</p>
+            </div>
+            <svg class="tile__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS (bento) ============ -->
+    <section class="skills" id="yetkinlikler">
+      <header class="section-head">
+        <span class="eyebrow" data-reveal data-i18n="sk.eyebrow">(05) — Skills</span>
+        <h2 class="section-title" data-reveal style="--d:.08s" data-i18n="sk.title">End to end.<br><span class="outline">Screen to server.</span></h2>
+      </header>
+
+      <div class="bento">
+        <article class="bcard bcard--wide" data-reveal data-spot>
+          <div class="bcard__text">
+            <span class="eyebrow">Backend & API</span>
+            <h3 data-i18n="sk.api.t">Contract-first APIs.</h3>
+            <p data-i18n="sk.api">Contract first, code second. Versioned REST endpoints, migrations and admin panels in PHP and Python.</p>
+          </div>
+          <div class="terminal" data-terminal>
+            <div class="terminal__bar"><i></i><i></i><i></i><span>~/loginearth</span></div>
+            <pre class="terminal__body"><code data-terminal-out></code><span class="terminal__caret"></span></pre>
+          </div>
+        </article>
+
+        <article class="bcard" data-reveal style="--d:.08s" data-spot>
+          <span class="eyebrow" data-i18n="sk.mob.e">Mobile</span>
+          <h3>Flutter</h3>
+          <p data-i18n="sk.mob">One codebase, two platforms. Map, camera and location-driven flows.</p>
+          <div class="bcard__big outline">iOS<br>Android</div>
+        </article>
+
+        <article class="bcard" data-reveal data-spot>
+          <span class="eyebrow" data-i18n="sk.auto.e">Autonomous systems</span>
+          <h3 data-i18n="sk.auto.t">Flight & simulation</h3>
+          <p data-i18n="sk.auto">Autonomy built on PX4, ROS 2 and 6-DOF physics models, validated over thousands of SITL runs.</p>
+          <div class="meter"><span style="--w:82%"></span></div>
+          <div class="meter"><span style="--w:64%"></span></div>
+          <div class="meter"><span style="--w:91%"></span></div>
+        </article>
+
+        <article class="bcard" data-reveal style="--d:.08s" data-spot>
+          <span class="eyebrow" data-i18n="sk.sys.e">Systems</span>
+          <h3>Rust & C++</h3>
+          <p data-i18n="sk.sys">Reverse engineering, memory analysis and Ed25519-signed auto-update clients.</p>
+          <code class="sig">ed25519 ✓ manifest.json.sig</code>
+        </article>
+
+        <article class="bcard" data-reveal style="--d:.16s" data-spot>
+          <span class="eyebrow" data-i18n="sk.ui.e">Interface</span>
+          <h3 data-i18n="sk.ui.t">Simple & in motion</h3>
+          <p data-i18n="sk.ui">Design contracts, fluid motion and nothing extra.</p>
+          <div class="orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="iletisim">
+      <canvas class="contours" data-contours='{"alpha":0.22,"cell":16,"scale":0.0018,"mouse":1}' aria-hidden="true"></canvas>
+      <div class="contact__inner">
+        <span class="eyebrow" data-reveal data-i18n="ct.eyebrow">(06) — Contact</span>
+        <h2 class="contact__title" data-reveal style="--d:.08s">
+          <span data-i18n="ct.t1">Got an idea?</span><br>
+          <span class="outline" data-i18n="ct.t2">Let’s talk.</span>
+        </h2>
+        <div class="contact__actions" data-reveal style="--d:.16s">
+          <a class="orb" href="mailto:cakmakcierin@gmail.com" data-magnetic data-cursor="Write" data-i18n-attr="data-cursor:cur.write">
+            <span data-i18n="ct.orb">Send<br>an email</span>
+          </a>
+          <div class="contact__mail">
+            <span class="eyebrow" data-i18n="ct.mail">Email</span>
+            <a href="mailto:cakmakcierin@gmail.com" class="u-line">cakmakcierin@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span>© <span data-year>2026</span> Erin Çakmakçı</span>
+        <span class="footer__time"><span data-i18n="ft.tz">Türkiye</span> · <span data-clock>--:--</span></span>
+        <a href="#top" class="u-line" data-i18n="ft.top">Back to top ↑</a>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
