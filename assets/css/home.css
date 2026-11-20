@@ -477,6 +477,13 @@
 .tile__body { display: grid; gap: 10px; }
 .tile__body h3 { font-size: clamp(26px, 2.4vw, 34px); font-weight: 700; letter-spacing: -.035em; line-height: 1.05; }
 .tile__body p { color: var(--g-300); font-size: 14px; }
+.tile__title { display: inline-flex; align-items: center; gap: 8px; }
+.tile__ext {
+  width: 22px; height: 22px; flex: none;
+  fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  transition: transform .4s var(--ease);
+}
+.tile:hover .tile__ext { transform: translate(3px, -3px); }
 .tile--cta { background: var(--g-50); color: var(--g-950); border-color: transparent; }
 .tile--cta .tile__num { color: var(--g-200); }
 .tile--cta p { color: var(--g-600); }
